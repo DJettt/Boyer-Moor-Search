@@ -39,7 +39,7 @@ function boyerMooreSearchAll(text, pattern) {
       i += Math.max(1, k - last[text[i]]);
     } else {
       // Сдвиг на максимум из сдвигов символа и сдвига по правилу "плохого символа"
-      i += Math.max(1, k - last[text[i]]);
+      i += Math.max(1, k - 1);
     }
   }
 
